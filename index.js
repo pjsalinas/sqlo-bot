@@ -16,19 +16,19 @@ const T = new Twit({
   access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET
 });
 
-
-var retweet = function() {
+// search twitter for all tweets containing the 'word' or 'words'
+var lookForTweets = function() {
 	var params = {
 		q: '#nodejs, #node.js',
 		result_type: 'recent',
 		lang: 'en'
-
 	};
 
 	T.get('search/tweets', params, function(err, data) {
 		console.log(data);
 	});
 };
+
 
 // Get the list of user id's that follow @sqlo
 var getFollowers = function() {
@@ -38,7 +38,15 @@ var getFollowers = function() {
 	});
 };
 
-getFollowers();
 
-//retweet();
+// retweet a tweet with id
+var retweet = function(id) {
+  T.post('statuses/retweet/:id', { id: id }, function(err, data, response){
+    console.log(data);
+  });
+};
 
+
+//retweet(id);
+//getFollowers();
+//lookForTweets();
