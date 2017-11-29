@@ -16,10 +16,6 @@ const T = new Twit({
   access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET
 });
 
-// get the list of user id's that follow @sqlo
-//T.get('followers/ids', { screen_name: 'sqlo' },  function (err, data, response) {
-  //console.log(data)
-//});
 
 var retweet = function() {
 	var params = {
@@ -34,5 +30,15 @@ var retweet = function() {
 	});
 };
 
-retweet();
+// Get the list of user id's that follow @sqlo
+var getFollowers = function() {
+	T.get('followers/ids', { screen_name: 'sqlo' }, function(err, data, response){
+		console.log(data.ids);
+		console.log('Num. of followers: ' + data.ids.length);
+	});
+};
+
+getFollowers();
+
+//retweet();
 

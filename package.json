@@ -1,7 +1,7 @@
 {
-  "name": "sqlo-bot",
+  "name": "sqlobot",
   "version": "1.0.0",
-  "description": "A bot to help me to enhance my twitter account and hopefully get more followers and some others to follow.",
+  "description": "A bot to help me we my twitter account using node.js and twit.",
   "main": "index.js",
   "dependencies": {
     "dotenv": "^4.0.0",
@@ -17,11 +17,10 @@
   },
   "keywords": [
     "twitter",
-    "claudia",
-    "claudiajs",
-    "aws-lambda"
+    "bot",
+    "twit"
   ],
-  "author": "pedrojsalinas@gmail.com",
+  "author": "Pedro J. Salinas",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/pjsalinas/sqlo-bot/issues"
