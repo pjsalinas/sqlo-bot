@@ -1,0 +1,29 @@
+{
+  "name": "sqlo-bot",
+  "version": "1.0.0",
+  "description": "A bot to help me to enhance my twitter account and hopefully get more followers and some others to follow.",
+  "main": "index.js",
+  "dependencies": {
+    "twit": "^2.2.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pjsalinas/sqlo-bot.git"
+  },
+  "keywords": [
+    "twitter",
+    "claudia",
+    "claudiajs",
+    "aws-lambda"
+  ],
+  "author": "pedrojsalinas@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pjsalinas/sqlo-bot/issues"
+  },
+  "homepage": "https://github.com/pjsalinas/sqlo-bot#readme"
+}
